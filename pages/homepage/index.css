@@ -8,7 +8,24 @@ main {
   width: 100%;
   height: 100vh;
 }
+
+.banner__inner {
+  position: relative;
+  height: 100%;
+}
+
 #banner .background__banner {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#banner .background__banner--mb {
+  display: none;
   position: absolute;
   z-index: 1;
   top: 0;
@@ -184,6 +201,10 @@ main {
   transform: translateX(2.95rem);
 }
 
+#banner .box__img__people--mb {
+  display: none;
+}
+
 #banner .box__img__people img {
   width: 100%;
   height: 100%;
@@ -253,7 +274,7 @@ main {
     rgba(9, 44, 76, 0.87)
   );
   text-align: center;
-  font-size: 1rem;
+  font-size: var(--font-size-sub1);
   font-weight: 400;
   line-height: 150%;
   letter-spacing: 0.03125rem;
@@ -267,7 +288,7 @@ main {
     drop-shadow(23px 93px 57px rgba(50, 34, 129, 0.05))
     drop-shadow(41px 165px 68px rgba(50, 34, 129, 0.01))
     drop-shadow(64px 258px 74px rgba(50, 34, 129, 0));
-  width: 45.25rem;
+  width: 45.25%;
   height: 20.9375rem;
   margin: 0 auto;
   border-radius: 0.6875rem;
@@ -358,6 +379,10 @@ main {
   height: 100%;
   object-fit: cover;
   z-index: 1;
+}
+
+#multi__purpose .title__linear__gradient br {
+  display: none;
 }
 
 #multi__purpose .title__linear__gradient {
@@ -453,6 +478,26 @@ main {
   width: 40rem;
 }
 
+#partnership .box__image__program {
+  height: 21.75rem;
+  position: relative;
+}
+
+#partnership .program__overlay {
+  position: absolute;
+  width: 42.5rem;
+  height: 42.5rem;
+  border-radius: 50%;
+  opacity: 0.1;
+  background: radial-gradient(
+    99.71% 100.74% at 51.25% 36.08%,
+    #5328ff 0%,
+    #3de1f7 100%
+  );
+  filter: blur(250px);
+  left: 30%;
+}
+
 #partnership .tag__partnership {
   border-radius: 0.25rem;
   background: var(--Palette-Indigo-Blue-Light, #eaedfe);
@@ -463,9 +508,10 @@ main {
   width: fit-content;
   color: var(--Primary-color-Azure-blue, #5282ff);
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 160%;
   letter-spacing: 0.01563rem;
+  text-transform: uppercase;
 }
 
 #partnership .title__partnership {
@@ -641,6 +687,17 @@ main {
   z-index: 1;
 }
 
+#technology .background__technology--mb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 35.1875rem;
+  object-fit: cover;
+  z-index: 1;
+  display: none;
+}
+
 #technology .box__technology {
   position: relative;
   z-index: 2;
@@ -692,6 +749,16 @@ main {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+#get__started .banner__started--mb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: none;
 }
 
 #get__started .box__started {
