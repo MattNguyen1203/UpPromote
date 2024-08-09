@@ -11,7 +11,7 @@ html {
   font-size: 1vw;
   scrollbar-gutter: stable;
 }
-@media (max-width: 768px) {
+@media (max-width: 639.9px) {
   html {
     font-size: 4.267vw;
   }
@@ -56,11 +56,11 @@ button {
 :root {
   /* fonts */
   --font-size-H1-pc: 3.625rem;
-  --font-size-H1-mb: 2.5rem;
+  --font-size-H1-mb: 2.125rem;
   --font-size-H2-pc: 2.9375rem;
-  --font-size-H2-mb: 2rem;
+  --font-size-H2-mb: 1.75rem;
   --font-size-H3-pc: 2.0625rem;
-  --font-size-H3-mb: 1.625rem;
+  --font-size-H3-mb: 1.375rem;
   --font-size-H4: 1.4375rem;
   --font-size-H5: 1.1875rem;
   --font-size-sub1: 1rem;
@@ -200,25 +200,6 @@ h5,
   font-weight: 600;
 }
 
-@media (max-width: 767px) {
-  h1,
-  .font-size-H1 {
-    font-size: var(--font-size-H1-mb);
-    letter-spacing: -0.5%;
-  }
-
-  h2,
-  .font-size-H2 {
-    font-size: var(--font-size-H2-mb);
-  }
-
-  h3,
-  .font-size-H3 {
-    font-size: var(--font-size-H3-mb);
-    letter-spacing: 0.25%;
-  }
-}
-
 /* container */
 .container {
   width: 87.5rem;
@@ -354,7 +335,7 @@ h5,
 .title__linear__gradient {
   color: var(--12-semi, #092c4c);
   text-align: center;
-  font-size: 2.9375rem;
+  font-size: var(--font-size-H2-pc);
   font-weight: 600;
   line-height: normal;
   margin: 0 auto;
@@ -365,7 +346,45 @@ h5,
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 2.9375rem;
+  font-size: var(--font-size-H2-pc);
   font-weight: 600;
   line-height: normal;
+}
+
+@media (max-width: 639.9px) {
+  /* container */
+  .container {
+    width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  /* linear */
+  .title__linear__gradient {
+    font-size: var(--font-size-H2-mb);
+    line-height: 120%;
+    margin: 0 auto;
+  }
+
+  .title__linear__gradient span {
+    font-size: var(--font-size-H2-mb);
+    line-height: 120%;
+  }
+
+  h1,
+  .font-size-H1 {
+    font-size: var(--font-size-H1-mb);
+    letter-spacing: 0;
+  }
+
+  h2,
+  .font-size-H2 {
+    font-size: var(--font-size-H2-mb);
+  }
+
+  h3,
+  .font-size-H3 {
+    font-size: var(--font-size-H3-mb);
+    letter-spacing: 0.25%;
+  }
 }

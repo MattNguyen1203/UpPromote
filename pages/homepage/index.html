@@ -6,6 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../../global.css" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <main>
@@ -15,7 +20,12 @@
           src="../../assets/images/home/banner.jpg"
           alt=""
         />
-        <div class="container">
+        <img
+          class="background__banner--mb"
+          src="../../assets/images/home/res/banner-mb.jpg"
+          alt=""
+        />
+        <div class="container banner__inner">
           <div class="container__banner">
             <div class="built__banner">
               <div class="box__diamond">
@@ -40,6 +50,12 @@
               <div class="btn__sign font-size-button">
                 Not on Shopify?<a href="/">Sign up here</a>
               </div>
+            </div>
+            <div class="box__img__people--mb">
+              <img
+                src="../../assets/images/home/res/people-banner-mb.png"
+                alt="people-banner"
+              />
             </div>
             <div class="box__rating">
               <img
@@ -133,7 +149,7 @@
           UpPromote is the <span>most-entrusted</span> Shopify affiliate app
         </h2>
         <p class="description__most__entrusted">
-          Over 100.000+ brands, eCommerce experts, review platforms, and fellow
+          Over 100,000+ brands, eCommerce experts, review platforms, and fellow
           app developers endorse us. Service, customer support, features,
           performance, and more, UpPromote gets good words from every front.
         </p>
@@ -173,7 +189,12 @@
           alt=""
         />
         <h2 class="title__linear__gradient">
-          Explore our <span>multi-purpose</span> affiliate software platform
+          Explore our
+          <span
+            ><br />
+            multi-purpose</span
+          >
+          affiliate software platform
         </h2>
         <div class="container">
           <div class="card__item__purpose">
@@ -252,12 +273,103 @@
             </button>
           </div>
         </div>
+        <div id="multi__purpose__swipe">
+          <div class="swiper multi__purpose__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card__item__purpose">
+                  <h3 class="title__card__purpose">Affiliate marketing</h3>
+                  <p class="description__card__purpose">
+                    UpPromote has everything you need to run your affiliate
+                    program completed with custom rules, commissions, and
+                    trackers in 4 steps.
+                  </p>
+                  <button class="btn__learn__more">
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.96338 8H12.9634M12.9634 8L8.96338 4M12.9634 8L8.96338 12"
+                        stroke="white"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card__item__purpose">
+                  <h3 class="title__card__purpose">Affiliate marketing</h3>
+                  <p class="description__card__purpose">
+                    UpPromote has everything you need to run your affiliate
+                    program completed with custom rules, commissions, and
+                    trackers in 4 steps.
+                  </p>
+                  <button class="btn__learn__more">
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.96338 8H12.9634M12.9634 8L8.96338 4M12.9634 8L8.96338 12"
+                        stroke="white"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card__item__purpose">
+                  <h3 class="title__card__purpose">Affiliate marketing</h3>
+                  <p class="description__card__purpose">
+                    UpPromote has everything you need to run your affiliate
+                    program completed with custom rules, commissions, and
+                    trackers in 4 steps.
+                  </p>
+                  <button class="btn__learn__more">
+                    Learn More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="17"
+                      height="16"
+                      viewBox="0 0 17 16"
+                      fill="none"
+                    >
+                      <path
+                        d="M1.96338 8H12.9634M12.9634 8L8.96338 4M12.9634 8L8.96338 12"
+                        stroke="white"
+                        stroke-width="1.2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </section>
       <section id="partnership">
         <h2 class="title__linear__gradient">
           Start & scale your <span>partnership marketing </span>
         </h2>
-        <div class="container">
+        <div class="container partner__affiliate">
           <div class="box__infor__partnership">
             <div class="tag__partnership">Program Setup</div>
             <h3 class="title__partnership">
@@ -266,7 +378,8 @@
             </h3>
             <p class="description__partnership">
               Customize your program with a wide range of commission
-              possibilities! Make your campaign both desirable and manageable:
+              possibilities!<br />Make your campaign both desirable and
+              manageable:
             </p>
             <div class="box__check__partnership">
               <img
@@ -299,7 +412,7 @@
               >
             </div>
             <button class="btn__item__partnership">
-              Discover our robust tracking
+              Try UpPromote's dynamic settings
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -316,6 +429,23 @@
                 />
               </svg>
             </button>
+          </div>
+          <div class="box__image__program">
+            <div class="program__overlay"></div>
+            <img
+              width="692"
+              height="360"
+              src="https://s-test.okhub-tech.com/wp-content/uploads/2024/08/Frame-1618872784-2.png"
+              class="attachment-full size-full"
+              alt=""
+              decoding="async"
+              loading="lazy"
+              srcset="
+                https://s-test.okhub-tech.com/wp-content/uploads/2024/08/Frame-1618872784-2.png         692w,
+                https://s-test.okhub-tech.com/wp-content/uploads/2024/08/Frame-1618872784-2-300x156.png 300w
+              "
+              sizes="(max-width: 692px) 100vw, 692px"
+            />
           </div>
         </div>
         <div class="container partner__networks">
@@ -382,7 +512,7 @@
             </button>
           </div>
         </div>
-        <div class="container">
+        <div class="container partner__performance">
           <div class="box__infor__partnership">
             <div class="tag__partnership">Management</div>
             <h3 class="title__partnership">
@@ -588,6 +718,11 @@
           src="../../assets/images/home/bg-earth.jpg"
           alt=""
         />
+        <img
+          class="background__technology--mb"
+          src="../../assets/images/home/res/bg-earth-mb.jpg"
+          alt=""
+        />
         <div class="container box__technology">
           <h2 class="title__linear__gradient">
             <span>UpPromote's</span> integrations & technology partners
@@ -605,6 +740,12 @@
               src="../../assets/images/home/get-startedjpg.jpg"
               alt=""
             />
+
+            <img
+              class="banner__started--mb"
+              src="../../assets/images/home/res/get-started-mb.jpg"
+              alt=""
+            />
             <div class="box__started">
               <h2>
                 Get started with<br />
@@ -617,5 +758,15 @@
         </div>
       </section>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".multi__purpose__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 16,
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    </script>
   </body>
 </html>
